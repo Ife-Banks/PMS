@@ -17,7 +17,7 @@ function Card({
       data-size={size}
       data-hover={hover}
       className={cn(
-        "group/card flex flex-col gap-5 rounded-2xl bg-card p-5 text-sm text-card-foreground shadow-[0_24px_50px_-34px_hsl(var(--foreground)/0.35)] ring-1 ring-border/60 transition-all duration-300 ease-out has-data-[slot=card-footer]:pb-0 has-data-[slot=card-content]:p-0 has-[>img:first-child]:pt-0 data-[size=sm]:rounded-xl",
+        "group/card flex flex-col gap-5 rounded-2xl bg-card p-5 text-sm text-card-foreground shadow-[0_24px_50px_-34px_var(--foreground)/0.35] ring-1 ring-border/60 transition-all duration-300 ease-out has-data-[slot=card-footer]:pb-0 has-data-[slot=card-content]:p-0 has-[>img:first-child]:pt-0 data-[size=sm]:rounded-xl",
         className
       )}
       {...props}

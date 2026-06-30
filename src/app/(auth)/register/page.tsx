@@ -70,7 +70,7 @@ export default function RegisterPage() {
         </p>
       }
     >
-      <Card className="overflow-hidden rounded-[1.35rem] border-border/60 bg-background/80 shadow-[0_24px_60px_-36px_hsl(var(--foreground)/0.32)]">
+      <Card className="overflow-hidden rounded-[1.35rem] border-border/60 bg-background/80 shadow-[0_24px_60px_-36px_var(--foreground)/0.32]">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="text-2xl">Create account</CardTitle>
           <CardDescription>Start with your farm profile</CardDescription>

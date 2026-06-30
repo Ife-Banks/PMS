@@ -30,7 +30,7 @@ export function AuthShell({ title, description, eyebrow, children, footnote }: A
           <div className="flex h-full flex-col justify-between p-8 xl:p-10">
             <div>
               <div className="mb-8 flex items-center gap-3">
-                <div className="flex size-14 items-center justify-center rounded-3xl border border-primary/15 bg-primary/10 shadow-[0_18px_36px_-24px_hsl(var(--primary)/0.75)]">
+                <div className="flex size-14 items-center justify-center rounded-3xl border border-primary/15 bg-primary/10 shadow-[0_18px_36px_-24px_var(--primary)/0.75]">
                   <Egg className="size-7 text-primary" />
                 </div>
                 <div>
@@ -55,7 +55,7 @@ export function AuthShell({ title, description, eyebrow, children, footnote }: A
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {features.map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/75 px-4 py-3 shadow-[0_14px_30px_-24px_hsl(var(--foreground)/0.28)]">
+                  <div key={label} className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/75 px-4 py-3 shadow-[0_14px_30px_-24px_var(--foreground)/0.28]">
                     <div className="flex size-10 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                       <Icon className="size-5" />
                     </div>
@@ -66,7 +66,7 @@ export function AuthShell({ title, description, eyebrow, children, footnote }: A
             </div>
 
             <div className="grid gap-4">
-              <Card className="rounded-[1.35rem] bg-background/75 p-5 shadow-[0_18px_40px_-28px_hsl(var(--foreground)/0.3)]">
+              <Card className="rounded-[1.35rem] bg-background/75 p-5 shadow-[0_18px_40px_-28px_var(--foreground)/0.3]">
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="text-sm font-medium text-muted-foreground">System status</p>
@@ -96,7 +96,7 @@ export function AuthShell({ title, description, eyebrow, children, footnote }: A
         <main className="flex items-center justify-center">
           <div className="w-full max-w-md">
             <div className="mb-6 flex items-center gap-3 lg:hidden">
-              <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 shadow-[0_14px_28px_-22px_hsl(var(--primary)/0.65)]">
+              <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 shadow-[0_14px_28px_-22px_var(--primary)/0.65]">
                 <Egg className="size-6 text-primary" />
               </div>
               <div>
