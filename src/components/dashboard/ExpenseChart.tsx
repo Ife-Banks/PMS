@@ -40,7 +40,7 @@ export function ExpenseChart({ data }: Props) {
         <XAxis dataKey="month" tick={{ fontSize: 11, fill: '#9ca3af' }} axisLine={false} tickLine={false} />
         <YAxis tick={{ fontSize: 11, fill: '#9ca3af' }} axisLine={false} tickLine={false} width={56}
           tickFormatter={(v) => `₦${v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v}`} />
-        <Tooltip formatter={(v: number) => `₦${v.toLocaleString()}`} />
+        <Tooltip formatter={(v) => `₦${Number(v).toLocaleString()}`} />
         <Legend wrapperStyle={{ fontSize: 11 }} />
         {categories.map(cat => (
           <Bar key={cat} dataKey={cat} stackId="a" fill={COLORS[cat] ?? '#6b7280'} radius={cat === categories[categories.length - 1] ? [4, 4, 0, 0] : [0, 0, 0, 0]} />

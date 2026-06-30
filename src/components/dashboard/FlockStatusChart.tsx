@@ -38,7 +38,7 @@ export function FlockStatusChart({ data }: Props) {
             <Cell key={entry.name} fill={COLORS[entry.name as keyof typeof COLORS] ?? '#6b7280'} />
           ))}
         </Pie>
-        <Tooltip formatter={(v: number, name: string) => [v, name.charAt(0).toUpperCase() + name.slice(1)]} />
+        <Tooltip formatter={(v, name) => [v, String(name).charAt(0).toUpperCase() + String(name).slice(1)]} />
         <Legend wrapperStyle={{ fontSize: 12 }} formatter={(v) => v.charAt(0).toUpperCase() + v.slice(1)} />
       </PieChart>
     </ResponsiveContainer>
